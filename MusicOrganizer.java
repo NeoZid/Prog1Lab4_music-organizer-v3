@@ -30,14 +30,14 @@ public class MusicOrganizer
      * 30)
      * int number = 10
      * while(number <= 95) {
-     *      print.out.ln(number);
+     *      System.print.ln(number);
      *      number = number + 5; 
      *      }
      * 31) 
      * int number = 1
      * while (number <= 10)
      *      number++
-     *      print.out.ln(number)
+     *      System.print.ln(number)
      * 
      * 
      */
