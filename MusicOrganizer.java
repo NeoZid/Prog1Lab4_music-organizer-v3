@@ -12,6 +12,15 @@ public class MusicOrganizer
     private ArrayList<String> files;
     // A player for the music files.
     private MusicPlayer player;
+    
+    /*
+     *
+     * 
+     * 25) If listmatching is not found, nothing is printed.
+     * 
+     * 
+     * 
+     */
         
     /**
      * Create a MusicOrganizer
@@ -20,6 +29,19 @@ public class MusicOrganizer
     {
         files = new ArrayList<>();
         player = new MusicPlayer();
+    }
+    
+    // #26 Challenge
+    public void listMatching(String searchString) {
+        boolean searching = true;
+        for(String filename : files) {
+            if(filename.contains(searchString)) {
+                System.out.println(filename);
+            } 
+            if (searching = false); {
+                System.out.println("Song not found");
+            }
+        }
     }
     
     /**
@@ -57,7 +79,7 @@ public class MusicOrganizer
      */
     public void listAllFiles()
     {
-        int position = 0;
+        int position = 0; // Number 24 Challenge
         for(String filename : files) {
             System.out.println(position + " : " + filename);
             position++;
