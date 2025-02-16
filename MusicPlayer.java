@@ -7,6 +7,7 @@ import javazoom.jl.player.AudioDevice;
 import javazoom.jl.player.FactoryRegistry;
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
+
 /**
  * Provide basic playing of MP3 files via the javazoom library.
  * See http://www.javazoom.net/

@@ -13,11 +13,31 @@ public class MusicOrganizer
     // A player for the music files.
     private MusicPlayer player;
     
+    
     /*
      *
      * 
      * 25) If listmatching is not found, nothing is printed.
      * 
+     * 28) private ArrayList<Tracks> tracks;
+     * 29)
+     * boolean found = false;
+     * while(found) {
+     *      if(the keys are in the place) {
+     *          found = true
+     *  }
+     * 
+     * 30)
+     * int number = 10
+     * while(number <= 95) {
+     *      print.out.ln(number);
+     *      number = number + 5; 
+     *      }
+     * 31) 
+     * int number = 1
+     * while (number <= 10)
+     *      number++
+     *      print.out.ln(number)
      * 
      * 
      */
@@ -40,6 +60,14 @@ public class MusicOrganizer
             } 
             if (searching = false); {
                 System.out.println("Song not found");
+            }
+        }
+    }
+    // #27 
+    public void playArtist(String searchString) {
+        for (String filename : files) {
+            if(filename.contains(searchString)) {
+                player.startPlaying(filename);
             }
         }
     }
