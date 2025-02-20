@@ -28,16 +28,24 @@ public class MusicOrganizer
      *  }
      * 
      * 30)
-     * int number = 10
-     * while(number <= 95) {
+     * int number = 10;
+     * while((number >= 10) && (number <= 95)) {
      *      System.print.ln(number);
      *      number = number + 5; 
      *      }
      * 31) 
-     * int number = 1
-     * while (number <= 10)
-     *      number++
-     *      System.print.ln(number)
+     * int number = 1;
+     * int sum = 0;
+     * while (number <= 10) {
+     *     sum = sum + number;
+     *      number++;
+     *      }
+     *      System.print.ln(sum);
+     *      
+     * 33)
+     * isPrime(int n);
+     * n=
+     * 
      * 
      * 
      */
@@ -70,6 +78,45 @@ public class MusicOrganizer
                 player.startPlaying(filename);
             }
         }
+    }
+    
+    // #31
+    public void sum(){
+    int number = 1;
+    int sum = 0;
+    
+    while (number <= 10){
+        sum = sum + number;
+        number++;
+    }
+        System.out.println("Sum from 1 to 10 is:"+sum);
+    }
+    
+    // #32
+    public void sum_AB(int a, int b){
+    int number=a;
+    int sum=0;
+    
+    while (number <= b){
+        sum = sum + number;
+        number++;
+    }
+        System.out.println("Sum from a to b is:"+sum);
+    }
+    
+    //33
+    public boolean isPrime(int n){
+       int i = 2;
+       
+        while (i < n) {
+              if (n%i == 0) {
+                  System.out.println("FALSE: "+n+" is multiple of" +i);
+                  return false;
+              } 
+              i++;
+        }
+        
+        return true;
     }
     
     /**
